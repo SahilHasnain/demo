@@ -1,0 +1,197 @@
+/* Custom styles for Al-Barakat Islamic Store */
+
+/* Hero Slider */
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-dot.active {
+  background-color: #047857; /* emerald-700 */
+}
+
+/* Category cards hover effect */
+.category-card:hover .icon {
+  background-color: #047857;
+  color: white;
+}
+
+/* Mobile dropdown menu */
+.mobile-dropdown .hidden {
+  display: none;
+}
+
+.mobile-dropdown.active .hidden {
+  display: block;
+}
+
+/* Product image zoom effect */
+.group:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Scroll to top button animation */
+#scroll-to-top {
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Prayer Times Widget */
+.prayer-times {
+  background: linear-gradient(135deg, #065f46, #047857);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.prayer-times-header {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+
+.prayer-time-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prayer-time-item:last-child {
+  border-bottom: none;
+}
+
+/* Islamic calendar widget */
+.islamic-date {
+  text-align: center;
+  background-color: #f0fdf4; /* emerald-50 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.islamic-date .date-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #047857; /* emerald-700 */
+}
+
+.islamic-date .month-name {
+  color: #065f46; /* emerald-800 */
+  font-weight: medium;
+}
+
+.islamic-date .year {
+  color: #6b7280; /* gray-500 */
+}
+
+/* Arabic text styling */
+.arabic-text {
+  font-family: "Traditional Arabic", "Scheherazade New", serif;
+  direction: rtl;
+}
+
+/* Add product counter styling */
+.product-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.product-quantity button {
+  background-color: #f3f4f6;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  font-weight: bold;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.product-quantity button:hover {
+  background-color: #e5e7eb;
+}
+
+.product-quantity input {
+  width: 2.5rem;
+  border: none;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* Tooltip for product features */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #047857;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #065f46;
+}
