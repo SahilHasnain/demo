@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Al-Barakat Islamic Store</title>
+    <title>Nizami Maktab</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -18,9 +18,15 @@
       <div
         class="container mx-auto px-4 py-2 flex justify-between items-center"
       >
-        <div class="flex items-center space-x-2">
-          <i class="fas fa-phone"></i>
-          <span>+91 9876543210</span>
+        <div class="flex items-center space-x-4">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>+91 9876543210</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Indore</span>
+          </div>
         </div>
         <div class="flex space-x-4">
           <a href="#" class="hover:text-emerald-200"
@@ -46,7 +52,7 @@
               class="text-2xl font-bold text-white flex items-center"
             >
               <i class="fas fa-mosque mr-2"></i>
-              Al-Barakat
+              Nizami Maktab
             </a>
           </div>
 
@@ -205,7 +211,7 @@
         <div class="slides-container flex transition-transform duration-500">
           <div class="slide min-w-full relative">
             <img
-              src="https://images.unsplash.com/photo-1570841398833-43e352b440ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="images/calligraphy.webp"
               alt="Mosque Interior"
               class="w-full h-[500px] object-cover"
             />
@@ -231,7 +237,7 @@
           </div>
           <div class="slide min-w-full relative">
             <img
-              src="https://images.unsplash.com/photo-1604743619840-d185280635c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="images/quran.png"
               alt="Quran Study"
               class="w-full h-[500px] object-cover"
             />
@@ -257,7 +263,7 @@
           </div>
           <div class="slide min-w-full relative">
             <img
-              src="https://images.unsplash.com/photo-1552423314-cf29ab68ad73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="images/attar-set.webp"
               alt="Islamic Art"
               class="w-full h-[500px] object-cover"
             />
@@ -375,15 +381,15 @@
           Featured Products
         </h2>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         >
           <!-- Product 1 -->
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1585579734456-ae5a7649c206?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/quran.png"
                 alt="Premium Quran"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-red-500 text-white text-sm font-semibold px-3 py-1"
@@ -419,10 +425,16 @@
                 <i class="fas fa-star-half-alt"></i>
                 <span class="text-gray-500 text-sm ml-1">(124)</span>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Premium Hardcover Quran"
+              >
                 Premium Hardcover Quran
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Beautifully designed hardcover Quran with Tajweed color coding"
+              >
                 Beautifully designed hardcover Quran with Tajweed color coding
               </p>
               <div class="flex justify-between items-center">
@@ -441,9 +453,9 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1594824483441-5b7b4aecef89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/prayer-mat.webp"
                 alt="Prayer Mat"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-emerald-500 text-white text-sm font-semibold px-3 py-1"
@@ -479,10 +491,16 @@
                 <i class="fas fa-star"></i>
                 <span class="text-gray-500 text-sm ml-1">(89)</span>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Luxury Prayer Mat"
+              >
                 Luxury Prayer Mat
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Memory foam padded prayer mat with intricate Islamic design"
+              >
                 Memory foam padded prayer mat with intricate Islamic design
               </p>
               <div class="flex justify-between items-center">
@@ -500,9 +518,9 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1608246399407-c5e39c4b6258?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/attar-set.webp"
                 alt="Attar Perfume"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2"
@@ -533,10 +551,16 @@
                 <i class="far fa-star"></i>
                 <span class="text-gray-500 text-sm ml-1">(56)</span>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Premium Attar Gift Set"
+              >
                 Premium Attar Gift Set
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Set of 5 traditional alcohol-free fragrances in elegant bottles"
+              >
                 Set of 5 traditional alcohol-free fragrances in elegant bottles
               </p>
               <div class="flex justify-between items-center">
@@ -555,9 +579,9 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1646278626898-4eec5b5ce521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/calligraphy.webp"
                 alt="Islamic Wall Art"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-orange-500 text-white text-sm font-semibold px-3 py-1"
@@ -593,10 +617,16 @@
                 <i class="fas fa-star-half-alt"></i>
                 <span class="text-gray-500 text-sm ml-1">(210)</span>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Islamic Calligraphy Wall Art"
+              >
                 Islamic Calligraphy Wall Art
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Hand-crafted wooden Islamic wall art with gold accents"
+              >
                 Hand-crafted wooden Islamic wall art with gold accents
               </p>
               <div class="flex justify-between items-center">
@@ -675,15 +705,15 @@
           New Arrivals
         </h2>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         >
           <!-- Product 1 -->
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1576072446584-4a8a6ab1f1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/pen.webp"
                 alt="Digital Quran"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-emerald-500 text-white text-sm font-semibold px-3 py-1"
@@ -718,10 +748,16 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Digital Quran Pen Reader"
+              >
                 Digital Quran Pen Reader
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Digital pen that reads Quran verses aloud when touched"
+              >
                 Digital pen that reads Quran verses aloud when touched
               </p>
               <div class="flex justify-between items-center">
@@ -739,9 +775,9 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1587500919989-e6770c3505c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/kurta1.avif"
                 alt="Men's Kurta"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-emerald-500 text-white text-sm font-semibold px-3 py-1"
@@ -776,10 +812,16 @@
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Premium Men's Kurta"
+              >
                 Premium Men's Kurta
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Handcrafted cotton kurta with elegant embroidery"
+              >
                 Handcrafted cotton kurta with elegant embroidery
               </p>
               <div class="flex justify-between items-center">
@@ -797,9 +839,9 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1625466214622-b9c11c2cb1f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/kurta2.jpg"
                 alt="Hijab"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-emerald-500 text-white text-sm font-semibold px-3 py-1"
@@ -834,10 +876,16 @@
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Premium Cotton Hijab Set"
+              >
                 Premium Cotton Hijab Set
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Set of 3 breathable cotton hijabs in elegant colors"
+              >
                 Set of 3 breathable cotton hijabs in elegant colors
               </p>
               <div class="flex justify-between items-center">
@@ -855,9 +903,9 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden group">
             <div class="relative">
               <img
-                src="https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                src="images/dates.webp"
                 alt="Dates Gift Box"
-                class="w-full h-64 object-cover"
+                class="w-full h-40 sm:h-48 md:h-64 object-cover"
               />
               <div
                 class="absolute top-0 right-0 bg-emerald-500 text-white text-sm font-semibold px-3 py-1"
@@ -892,10 +940,16 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              <h3
+                class="text-lg font-semibold mb-2 text-gray-800 truncate"
+                title="Premium Dates Gift Box"
+              >
                 Premium Dates Gift Box
               </h3>
-              <p class="text-gray-600 text-sm mb-2">
+              <p
+                class="text-gray-600 text-sm mb-2 line-clamp-2"
+                title="Assorted premium dates in an elegant gift box"
+              >
                 Assorted premium dates in an elegant gift box
               </p>
               <div class="flex justify-between items-center">

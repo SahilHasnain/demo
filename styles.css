@@ -195,3 +195,27 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #065f46;
 }
+
+/* Compact product grid for very small screens */
+@media (max-width: 360px) {
+  .grid.grid-cols-2 {
+    gap: 8px;
+  }
+
+  .bg-white.rounded-lg.shadow-md.overflow-hidden.group {
+    border-radius: 0.5rem;
+  }
+
+  .bg-white.rounded-lg img {
+    object-position: center top;
+  }
+}
+
+/* Line clamp utility (2 lines) for product descriptions */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
